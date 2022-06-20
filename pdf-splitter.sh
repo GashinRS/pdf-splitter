@@ -5,8 +5,8 @@ threshold=500
 
 syntax() {
   message="usage: pdf-splitter.sh [-p number of slides per page, default=2] [-s threshold, default = 500] filename.pdf
-          Threshold is the maximum page count for which the script will not split the file.
-          Splitting the file is necessary for large files, but will make the script slower."
+          Threshold is the maximum page count for which the script will not split the file into smaller ones to process it.
+          Splitting the file is necessary for large files, but will make the script slower. Try reducing this number if you're experiencing any issues."
   echo >&2 "$message"
   exit 1
 }
